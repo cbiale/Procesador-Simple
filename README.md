@@ -54,6 +54,8 @@ Opcodes:
 
 ## Esquema
 
+(Pendiente)
+
 ## Cambios a futuro
 
 - Agregar `loadi`, implica ampliar opcode a 4 bits y ver si es solo `inm`  o `rf1 + inm`.
