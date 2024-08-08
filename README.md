@@ -60,5 +60,6 @@ Opcodes:
 
 - Realizar pruebas de la memoria de instrucciones y memoria de datos.
 - Verificar si es necesario el signal valor en contador de programa.
+- Agregar reset al procesador.
 - Agregar `loadi`, implica ampliar opcode a 4 bits y ver si es solo `inm`  o `rf1 + inm`.
 - Implementar `in` y `out`.
