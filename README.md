@@ -59,7 +59,6 @@ Opcodes:
 ## Cambios a futuro
 
 - Realizar pruebas de la memoria de instrucciones y memoria de datos.
-- Verificar si es necesario el signal valor en contador de programa.
-- Agregar reset al procesador.
-- Agregar `loadi`, implica ampliar opcode a 4 bits y ver si es solo `inm`  o `rf1 + inm`.
+- Se ha agregado reset al procesador (pero no se ha implementado en todos los niveles).
+- Agregar `loadi`, implica ampliar opcode a 4 bits o cambiar formato de instrucciones de `add` y `sub` y ver si es solo `inm`  o `rf1 + inm`.
 - Implementar `in` y `out`.
