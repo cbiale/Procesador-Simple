@@ -1,9 +1,0 @@
-ghdl: cannot open *.vhd
-ghdl: importation has failed due to compilation error
-ghdl: bad unit name 'procesador_tb.vhdl'
-ghdl: (a unit name is required instead of a filename)
-rm: cannot remove '*.o': No such file or directory
-
-GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
-
-Error opening ghw file '/home/cbiale/Escritorio/UBA/maestria/materias/CLP/proyecto/testbench.ghw', rc=-1.

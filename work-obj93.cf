@@ -1,0 +1,40 @@
+v 4
+file . "procesador_tb.vhd" "4b38361a336d91ddb2fbd9fc837d458345236bcb" "20240808095426.588":
+  entity procesador_tb at 1( 0) + 0 on 35;
+  architecture procesador_tb_arq of procesador_tb at 7( 81) + 0 on 36;
+file . "unidad_control.vhd" "961f0d43e617ace1285106f44a1f3b8c19c96212" "20240808095426.564":
+  entity unidad_control at 1( 0) + 0 on 31;
+  architecture unidad_control_arq of unidad_control at 22( 647) + 0 on 32;
+file . "multiplexor.vhd" "673181c497924ad83364b2301cc89c02edb244d5" "20240808095426.539":
+  entity multiplexor at 1( 0) + 0 on 27;
+  architecture multiplexor_arq of multiplexor at 17( 490) + 0 on 28;
+file . "memoria_datos.vhd" "d2924ee66d4d9ef38aa59186a77b226022c601b6" "20240808095426.514":
+  entity memoria_datos at 1( 0) + 0 on 23;
+  architecture memoria_datos_arq of memoria_datos at 16( 405) + 0 on 24;
+file . "decoder.vhd" "8da4a590944cd0a6af958417df86f4f8cd9813d9" "20240808095426.484":
+  entity decoder at 1( 0) + 0 on 19;
+  architecture decoder_arq of decoder at 19( 581) + 0 on 20;
+file . "contador_programa.vhd" "2c1f62012e8c5f6ecb54e51138f21f9d6aee0098" "20240808095426.454":
+  entity contador_programa at 1( 0) + 0 on 15;
+  architecture contador_programa_arq of contador_programa at 14( 325) + 0 on 16;
+file . "alu.vhd" "26afa7e2a8d2eb7d4ef0d30f88dfd0522c1f1868" "20240808095426.425":
+  entity alu at 1( 0) + 0 on 11;
+  architecture alu_arq of alu at 15( 393) + 0 on 12;
+file . "banco_registros.vhd" "10e59aaac14f671208b8e84ee2ac7bd1678296b3" "20240808095426.439":
+  entity banco_registros at 1( 0) + 0 on 13;
+  architecture banco_registro_arq of banco_registros at 29( 832) + 0 on 14;
+file . "control_salto.vhd" "43361a02c07c5196a8dd3b7bcd089c3b93652f42" "20240808095426.469":
+  entity control_salto at 1( 0) + 0 on 17;
+  architecture control_salto_arq of control_salto at 14( 271) + 0 on 18;
+file . "extensor_signo.vhd" "09fd489dbe2adcf3e3d461096f404c66a0ba508b" "20240808095426.499":
+  entity extensor_signo at 1( 0) + 0 on 21;
+  architecture extensor_signo_arq of extensor_signo at 12( 250) + 0 on 22;
+file . "memoria_instrucciones.vhd" "cf628158a5be25fd3c0c7685883c54a8a81ed66a" "20240808095426.526":
+  entity memoria_instrucciones at 1( 0) + 0 on 25;
+  architecture memoria_instrucciones_arq of memoria_instrucciones at 13( 285) + 0 on 26;
+file . "sumador.vhd" "a1dd4c8f237af392e2b1ab96bebc0149f2c23e7a" "20240808095426.552":
+  entity sumador at 1( 0) + 0 on 29;
+  architecture sumador_arq of sumador at 17( 459) + 0 on 30;
+file . "procesador.vhd" "d3ec2085c27f7159476ec32f722c866644db1e19" "20240808095426.576":
+  entity procesador at 1( 0) + 0 on 33;
+  architecture procesador_arq of procesador at 11( 150) + 0 on 34;
