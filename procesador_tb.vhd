@@ -7,23 +7,25 @@ end entity;
 architecture procesador_tb_arq of procesador_tb is
     component procesador is
         port (
-            clk : in std_logic
+            clk : in std_logic;
+            rst : in std_logic
         );
     end component;
 
     signal clk : std_logic := '0';
+    signal rst : std_logic := '0';
     constant tiempo : time := 100 ns;
 
 begin
     -- instancia del procesador
     dut : procesador
-        port map (clk);
+        port map (clk, rst);
 
     -- reloj
     -- proceso que activa el reloj (funciona)
     process
     begin
-        while now < 300 ns loop
+        while now < 1000 ns loop
             clk <= '0';
             wait for (tiempo / 2);
             clk <= '1';

@@ -16,12 +16,5 @@ end multiplexor;
 
 architecture multiplexor_arq of multiplexor is
 begin
-    process(selector, valor_1, valor_2)
-    begin
-        if selector = '0' then
-            valor <= valor_1;
-        else
-            valor <= valor_2;            
-        end if;
-    end process;
+    valor <= valor_1 when selector = '0' else valor_2;
 end multiplexor_arq;

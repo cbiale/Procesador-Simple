@@ -4,7 +4,8 @@ use ieee.std_logic_1164.all;
 -- procesador implementado
 entity procesador is
     port (
-        clk : in std_logic
+        clk : in std_logic;
+        rst : in std_logic
     );
 end entity;
 
@@ -13,6 +14,7 @@ architecture procesador_arq of procesador is
     component contador_programa is
         port (
             clk : in std_logic;
+            rst : in std_logic;
             direccion_entrada : in std_logic_vector(15 downto 0);
             direccion_salida : out std_logic_vector(15 downto 0)
         );
@@ -21,7 +23,6 @@ architecture procesador_arq of procesador is
     -- Declaración del componente memoria de instrucciones
     component memoria_instrucciones is
         port (
-            clk : in std_logic;
             direccion : in std_logic_vector(15 downto 0);
             dato_leido : out std_logic_vector(15 downto 0)
         );
@@ -159,12 +160,12 @@ architecture procesador_arq of procesador is
 begin
     -- Instanciación del componente contador_programa
     instancia_contador_programa : contador_programa
-        port map (clk, direccion_entrada, direccion_salida
+        port map (clk, rst, direccion_entrada, direccion_salida
     );
 
     -- Instanciación del componente memoria de instrucciones
     instancia_memoria_instrucciones : memoria_instrucciones
-        port map (clk, direccion_salida, instruccion
+        port map (direccion_salida, instruccion
     );
 
     -- Instanciación del componente decoder

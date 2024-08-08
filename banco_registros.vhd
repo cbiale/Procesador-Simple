@@ -36,30 +36,17 @@ begin
     process(clk)
     begin
         if rising_edge(clk) then
-            -- salida de valores de registros
-            r1_datos <= registros(to_integer(unsigned(r1_direccion)));
-            r2_datos <= registros(to_integer(unsigned(r2_direccion)));
-            -- solo me interesa por el store
-            dato_escribir <= registros(to_integer(unsigned(re_direccion)));
-
             -- escritura en registros
             if re_habilitado = '1' then
                 registros(to_integer(unsigned(re_direccion))) <= re_escribir;
-                -- control de "errores" por si escribo el mismo registro que leo
-                -- IDEAL:
-                --  seria usar lectura en un flanco y escritura en otro pero he leido que no suele sintetizar
-                -- ALTERNATIVA: 
-                -- Usar en este proceso solo el clk para el cambio de registros
-                -- y usar otro proceso estimulado por r1_direccion y r2_direccion
-                -- igual no se si sea buena idea
-                -- que pasa si cambio varias veces el valor de ambos registros seguido?
-                if re_direccion = r1_direccion then
-                    r1_datos <= re_escribir;
-                end if;
-                if re_direccion = r2_direccion then
-                    r2_datos <= re_escribir;
-                end if;
             end if;
         end if;
     end process;
+
+    -- salida de valores de registros
+    r1_datos <= registros(to_integer(unsigned(r1_direccion)));
+    r2_datos <= registros(to_integer(unsigned(r2_direccion)));
+    -- solo me interesa por el store
+    dato_escribir <= registros(to_integer(unsigned(re_direccion)));
+
 end architecture;

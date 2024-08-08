@@ -16,8 +16,5 @@ end sumador;
 
 architecture sumador_arq of sumador is
 begin
-    process(valor, direccion_entrada)
-    begin
-        direccion_salida <= std_logic_vector(signed(direccion_entrada) + signed(valor));
-    end process;
+    direccion_salida <= std_logic_vector(signed(direccion_entrada) + signed(valor));
 end sumador_arq;

@@ -1,40 +1,64 @@
 v 4
-file . "procesador_tb.vhd" "4b38361a336d91ddb2fbd9fc837d458345236bcb" "20240808095426.588":
-  entity procesador_tb at 1( 0) + 0 on 35;
-  architecture procesador_tb_arq of procesador_tb at 7( 81) + 0 on 36;
-file . "unidad_control.vhd" "961f0d43e617ace1285106f44a1f3b8c19c96212" "20240808095426.564":
-  entity unidad_control at 1( 0) + 0 on 31;
-  architecture unidad_control_arq of unidad_control at 22( 647) + 0 on 32;
-file . "multiplexor.vhd" "673181c497924ad83364b2301cc89c02edb244d5" "20240808095426.539":
-  entity multiplexor at 1( 0) + 0 on 27;
-  architecture multiplexor_arq of multiplexor at 17( 490) + 0 on 28;
-file . "memoria_datos.vhd" "d2924ee66d4d9ef38aa59186a77b226022c601b6" "20240808095426.514":
-  entity memoria_datos at 1( 0) + 0 on 23;
-  architecture memoria_datos_arq of memoria_datos at 16( 405) + 0 on 24;
-file . "decoder.vhd" "8da4a590944cd0a6af958417df86f4f8cd9813d9" "20240808095426.484":
-  entity decoder at 1( 0) + 0 on 19;
-  architecture decoder_arq of decoder at 19( 581) + 0 on 20;
-file . "contador_programa.vhd" "2c1f62012e8c5f6ecb54e51138f21f9d6aee0098" "20240808095426.454":
-  entity contador_programa at 1( 0) + 0 on 15;
-  architecture contador_programa_arq of contador_programa at 14( 325) + 0 on 16;
-file . "alu.vhd" "26afa7e2a8d2eb7d4ef0d30f88dfd0522c1f1868" "20240808095426.425":
-  entity alu at 1( 0) + 0 on 11;
-  architecture alu_arq of alu at 15( 393) + 0 on 12;
-file . "banco_registros.vhd" "10e59aaac14f671208b8e84ee2ac7bd1678296b3" "20240808095426.439":
-  entity banco_registros at 1( 0) + 0 on 13;
-  architecture banco_registro_arq of banco_registros at 29( 832) + 0 on 14;
-file . "control_salto.vhd" "43361a02c07c5196a8dd3b7bcd089c3b93652f42" "20240808095426.469":
-  entity control_salto at 1( 0) + 0 on 17;
-  architecture control_salto_arq of control_salto at 14( 271) + 0 on 18;
-file . "extensor_signo.vhd" "09fd489dbe2adcf3e3d461096f404c66a0ba508b" "20240808095426.499":
-  entity extensor_signo at 1( 0) + 0 on 21;
-  architecture extensor_signo_arq of extensor_signo at 12( 250) + 0 on 22;
-file . "memoria_instrucciones.vhd" "cf628158a5be25fd3c0c7685883c54a8a81ed66a" "20240808095426.526":
-  entity memoria_instrucciones at 1( 0) + 0 on 25;
-  architecture memoria_instrucciones_arq of memoria_instrucciones at 13( 285) + 0 on 26;
-file . "sumador.vhd" "a1dd4c8f237af392e2b1ab96bebc0149f2c23e7a" "20240808095426.552":
-  entity sumador at 1( 0) + 0 on 29;
-  architecture sumador_arq of sumador at 17( 459) + 0 on 30;
-file . "procesador.vhd" "d3ec2085c27f7159476ec32f722c866644db1e19" "20240808095426.576":
-  entity procesador at 1( 0) + 0 on 33;
-  architecture procesador_arq of procesador at 11( 150) + 0 on 34;
+file . "unidad_control_tb.vhd" "3b9777eed08a60ad1bb6c5058ab936b4a32ebfe5" "20240808124422.494":
+  entity unidad_control_tb at 1( 0) + 0 on 51;
+  architecture unidad_control_tb_arq of unidad_control_tb at 8( 129) + 0 on 52;
+file . "unidad_control.vhd" "961f0d43e617ace1285106f44a1f3b8c19c96212" "20240808221035.977":
+  entity unidad_control at 1( 0) + 0 on 461;
+  architecture unidad_control_arq of unidad_control at 22( 647) + 0 on 462;
+file . "sumador_tb.vhd" "42055db3a76c712e964473b2816a4f758f5e2402" "20240808124422.489":
+  entity sumador_tb at 1( 0) + 0 on 47;
+  architecture sumador_tb_arq of sumador_tb at 9( 109) + 0 on 48;
+file . "sumador.vhd" "68b27ff3b7377474cfe01245a2452603a8b5d5fe" "20240808221035.963":
+  entity sumador at 1( 0) + 0 on 459;
+  architecture sumador_arq of sumador at 17( 459) + 0 on 460;
+file . "procesador_tb.vhd" "1cd28cf7e9216c884bcd60ce8f9ad0111328241f" "20240808221036.002":
+  entity procesador_tb at 1( 0) + 0 on 465;
+  architecture procesador_tb_arq of procesador_tb at 7( 81) + 0 on 466;
+file . "procesador.vhd" "7e740015459f944e8be87938c9f56cf7ba6461a6" "20240808221035.990":
+  entity procesador at 1( 0) + 0 on 463;
+  architecture procesador_arq of procesador at 12( 178) + 0 on 464;
+file . "multiplexor_tb.vhd" "ecb235e928ecfb65e125ca482c5204cb05d747f5" "20240808124422.482":
+  entity multiplexor_tb at 1( 0) + 0 on 39;
+  architecture multiplexor_tb_arq of multiplexor_tb at 8( 116) + 0 on 40;
+file . "multiplexor.vhd" "13efef214dc275bcb6203f03757309a6635f9895" "20240808221035.949":
+  entity multiplexor at 1( 0) + 0 on 457;
+  architecture multiplexor_arq of multiplexor at 17( 490) + 0 on 458;
+file . "memoria_instrucciones.vhd" "779dea0bcc4976d30c4c4fc9ee165471f5a73166" "20240808221035.933":
+  entity memoria_instrucciones at 1( 0) + 0 on 455;
+  architecture memoria_instrucciones_arq of memoria_instrucciones at 12( 257) + 0 on 456;
+file . "memoria_datos.vhd" "a710cb812e7711091a3e0bf4c163143a3a1112e7" "20240808221035.919":
+  entity memoria_datos at 1( 0) + 0 on 453;
+  architecture memoria_datos_arq of memoria_datos at 16( 405) + 0 on 454;
+file . "extensor_signo_tb.vhd" "9309786f1fd16468a3bb576717f71385255c6673" "20240808124422.477":
+  entity extensor_signo_tb at 1( 0) + 0 on 31;
+  architecture extensor_signo_tb_arq of extensor_signo_tb at 8( 122) + 0 on 32;
+file . "extensor_signo.vhd" "09fd489dbe2adcf3e3d461096f404c66a0ba508b" "20240808221035.904":
+  entity extensor_signo at 1( 0) + 0 on 451;
+  architecture extensor_signo_arq of extensor_signo at 12( 250) + 0 on 452;
+file . "decoder_tb.vhd" "27909d3dde7512a44d36def3d9591ec9d3615779" "20240808124422.474":
+  entity decoder_tb at 1( 0) + 0 on 27;
+  architecture decoder_tb_arq of decoder_tb at 7( 82) + 0 on 28;
+file . "decoder.vhd" "8da4a590944cd0a6af958417df86f4f8cd9813d9" "20240808221035.888":
+  entity decoder at 1( 0) + 0 on 449;
+  architecture decoder_arq of decoder at 19( 581) + 0 on 450;
+file . "control_salto_tb.vhd" "7ff5d3b7ce3517b2a7e208395dbd128d9ce1fd2d" "20240808124422.472":
+  entity control_salto_tb at 1( 0) + 0 on 23;
+  architecture control_salto_tb_arq of control_salto_tb at 8( 120) + 0 on 24;
+file . "control_salto.vhd" "43361a02c07c5196a8dd3b7bcd089c3b93652f42" "20240808221035.875":
+  entity control_salto at 1( 0) + 0 on 447;
+  architecture control_salto_arq of control_salto at 14( 271) + 0 on 448;
+file . "contador_programa.vhd" "28692fd626a19be9776fa162ca209e24c5bfd452" "20240808221035.859":
+  entity contador_programa at 1( 0) + 0 on 445;
+  architecture contador_programa_arq of contador_programa at 15( 353) + 0 on 446;
+file . "banco_registros_tb.vhd" "c92f61fdff6a7fee29943fac7d84b061de1f386d" "20240808210126.876":
+  entity banco_registros_tb at 1( 0) + 0 on 291;
+  architecture banco_registros_tb_arq of banco_registros_tb at 8( 131) + 0 on 292;
+file . "banco_registros.vhd" "13991785fc3dde13ce887bc5f23645fa03090958" "20240808221035.837":
+  entity banco_registros at 1( 0) + 0 on 443;
+  architecture banco_registro_arq of banco_registros at 29( 832) + 0 on 444;
+file . "alu_tb.vhd" "3c0588b38a04caaa82cded610412b13a7bbe4f5f" "20240808124422.464":
+  entity alu_tb at 1( 0) + 0 on 13;
+  architecture alu_tb_arq of alu_tb at 8( 107) + 0 on 14;
+file . "alu.vhd" "26afa7e2a8d2eb7d4ef0d30f88dfd0522c1f1868" "20240808221035.819":
+  entity alu at 1( 0) + 0 on 441;
+  architecture alu_arq of alu at 15( 393) + 0 on 442;
