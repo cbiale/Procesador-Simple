@@ -19,8 +19,8 @@ Autor: Claudio Omar Biale
 | jne rf1, rf2, inm  | Salta a pc+inm si rf1 no es igual a rf2           |
 | load rd, rf1, rf2  | Carga en rd el valor de la dirección rf1 + rf2    |
 | store rd, rf1, rf2 | Almacena en rd el valor de la dirección rf1 + rf2 |
-| in rd              | Obtiene de la UART el valor de rd                 |
-| out rd             | Envía a la UART el valor de rd                    |
+| outh rd            | Envía al puerto USB la parte alta del valor de rd |
+| outl rd            | Envía al puerto USB la parte baja del valor de rd |
 
 Formato de instrucciones:
 
@@ -38,8 +38,8 @@ Formato de instrucciones:
 
 | Instrucción      | opcode | 0      | rd      | 0       |
 |------------------|--------|--------|---------|---------|
-| in rd            | 3 bits | 6 bits | 3 bits  | 4 bits  |
-| out rd           | 3 bits | 6 bits | 3 bits  | 4 bits  |
+| outh rd          | 3 bits | 6 bits | 3 bits  | 4 bits  |
+| outl rd          | 3 bits | 6 bits | 3 bits  | 4 bits  |
 
 Opcodes:
 
@@ -49,8 +49,8 @@ Opcodes:
 - store: 011
 - je: 100
 - jne: 101
-- in: 110
-- out: 111
+- outh: 110
+- outl: 111
 
 ## Esquema
 
@@ -60,4 +60,4 @@ Opcodes:
 
 - Se ha agregado reset al procesador (pero no se ha implementado en todos los niveles).
 - Agregar `loadi`, implica ampliar opcode a 4 bits o cambiar formato de instrucciones de `add` y `sub` y ver si es solo `inm`  o `rf1 + inm`.
-- Implementar `in` y `out`.
+- Implementar `outh` y `outl`.
