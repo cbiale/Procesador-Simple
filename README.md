@@ -54,7 +54,7 @@ Opcodes:
 
 ## Esquema
 
-(Pendiente)
+![](procesador.drawio.png)
 
 ## Cambios a futuro
 
