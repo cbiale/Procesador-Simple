@@ -8,8 +8,16 @@ Autor: Claudio Omar Biale
 - 8 registros de 16 bits (`r0`..`r8`).
 - Memoria de instrucciones direccionable de 16 bits con ancho de memoria de 16 bits.
 - Memoria de datos direccionable de 16 bits con ancho de memoria de 16 bits.
+- Placa objetivo: EDU-CIAA-FPGA
 
-## Instrucciones:
+## Software utilizado: 
+
+El software utilizado para el desarrollo del procesador es:
+- GHDL.
+- GtkWave.
+- Imagen de Docker de la EDU-CIAA-FPGA con aplicativos de síntesis.
+
+## Instrucciones del procesador:
 
 | Instrucción        | Descripción                                       |
 |--------------------|---------------------------------------------------|
@@ -52,9 +60,35 @@ Opcodes:
 - outh: 110
 - outl: 111
 
-## Esquema
+## Esquema del procesador
 
 ![](procesador.drawio.png)
+
+
+## Aplicativo ejecutado en el procesador
+
+Contenido de la memoria de instrucciones
+```
+0100000000000000 -- load r0, r0, r0  carga en r0 el valor 1 de MD[0]
+0100010000010000 -- load r1, r2, r0  carga en r1 el valor 2 de MD[1]
+0000000010100000 -- add r2, r0, r1   almacena en r2 la suma de r0 y r1 es decir 3
+0110101000100000 -- store r2, r2, r0 almacena en MD[4] el valor de r2
+1000010010000000 -- je r1, r1, 0     salta a la dirección PC + 0 si r1 es igual a r1 (simula HALT)
+0000000000000000
+...
+0000000000000000
+```
+
+Contenido de la memoria de datos
+
+```
+0000000000000001
+0000000000000010
+0000000000000000
+...
+0000000000000000
+```
+
 
 ## Cambios a futuro
 
